@@ -1,0 +1,17 @@
+@import "../../assets/styles/color.scss";
+
+.button_next {
+  border: none;
+  // прозрачный фон
+  background-color: transparent;
+  width: 70px;
+  cursor: pointer;
+  .next {
+    font-size: 50px;
+    padding: 5px;
+    color: $color_blue;
+  }
+}
+// .button_next:disabled {
+//   visibility: hidden;
+// }

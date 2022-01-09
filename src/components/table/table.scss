@@ -1,0 +1,59 @@
+@import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/color.scss";
+@import "../../assets/styles/mixins.scss";
+
+.table_box {
+  margin-top: 100px;
+  @include position_word();
+}
+
+.table {
+  width: 80%;
+  margin-bottom: 20px;
+  border: 15px solid $light_gray;
+  border-top: 5px solid $light_gray;
+  border-collapse: collapse;
+  & th {
+    font-family: "Dosis-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: $twilight_orange;
+    padding: 10px;
+    background: $light_gray;
+    border: none;
+    border-bottom: 2px solid $light_blue;
+  }
+  & td {
+    @include font_style_cell();
+    color: $quartz_gray;
+    border: none;
+    border-bottom: 2px solid $light_blue;
+    .input_editMode {
+      @include font_style_cell();
+      outline: none;
+      background: transparent;
+      border: none;
+      text-align: center;
+      color: $herbal_green;
+    }
+    .inputError {
+      outline: none;
+      background: transparent;
+      border-bottom: 1px solid $red_McDonalds;
+      text-align: center;
+    }
+    .inputNull {
+      outline: none;
+      background: transparent;
+      border-bottom: 1px solid $color_yandex;
+      text-align: center;
+    }
+    .error {
+      color: $red_McDonalds;
+      font-family: "Dosis-Regular", sans-serif;
+      font-size: 15px;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}

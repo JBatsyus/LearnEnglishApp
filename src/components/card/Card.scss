@@ -1,0 +1,60 @@
+@import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/color.scss";
+@import "../../assets/styles/mixins.scss";
+
+.card_body {
+  @include position_word();
+  width: 400px;
+  height: 250px;
+  background-color: $color_blue;
+  border-radius: 10px;
+  margin: 60px auto;
+  box-shadow: 0 0 20px rgba(184, 179, 179, 0.87);
+
+  .card_word {
+    font-family: "DMSans-Regular", sans-serif;
+    font-size: 45px;
+    padding-bottom: 5px;
+    color: $color_yandex;
+  }
+  .card_transcription {
+    font-family: "DMSans-Regular", sans-serif;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 25px;
+  }
+  .card_translation {
+    font-family: "DMSans-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .card_answer_btn {
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "DMSans-Regular", sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    color: $twilight_orange;
+    padding: 5px;
+    margin-top: 20px;
+    border-color: rgba(238, 232, 232, 0.842);
+
+    &:focus {
+      outline: none;
+      // transform: scale(1.1);
+      border: 5px outset $color_yandex;
+    }
+  }
+}
+.hidden_btn {
+  font-family: "DMSans-Regular", sans-serif;
+  font-size: 25px;
+  color: $color_yandex;
+  cursor: pointer;
+  margin-left: 5px;
+}
